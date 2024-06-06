@@ -9,7 +9,8 @@ function createForm() {
         cpf: cpf.value,
         email: email.value,
         number: phone.value,
-        password: password.value
+        password: password.value,
+        createdAt: Date()
     };
 }
 
@@ -37,7 +38,7 @@ document.getElementById('registrationForm').addEventListener('submit', function 
     });
 
     alert('Registro efetuado com sucesso');
-    window.location.href = 'https://www.pragmaticplay.com/en/games/gates-of-olympus/?gamelang=pt&cur=BRL';
+    //window.location.href = 'https://www.pragmaticplay.com/en/games/gates-of-olympus/?gamelang=pt&cur=BRL';
 });
 
 document.getElementById('cpf').addEventListener('input', function (event) {
@@ -126,3 +127,4 @@ function validarCPF(cpf) {
 
     return true;
 }
+
