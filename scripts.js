@@ -5,7 +5,7 @@
 
 function createForm() {
     return {
-        name: name.value,
+        name: document.getElementById("name").value,
         cpf: cpf.value,
         email: email.value,
         number: phone.value,
